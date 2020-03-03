@@ -53,8 +53,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 nmap <F5> :tabp<CR>
 imap <F5> <C-o>:tabp<CR>
-nmap <F6> <C-o>:tabn<CR>
-imap <F6> :tabn<CR>
+nmap <F6> :tabn<CR>
+imap <F6> <C-o>:tabn<CR>
 nmap <F7> :so ~/.vimrc<CR>
 nmap <F8> :wa!<CR>
 nmap <C-f> :Ctrlp<CP>
