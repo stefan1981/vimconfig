@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-ugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -28,12 +28,10 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 Plugin 'vim-airline/vim-airline'
-
 Plugin 'kien/ctrlp.vim'
 
-
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
+" All of your Plugins must be added before the following line
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -53,12 +51,20 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Keymappings
 
+map <F5> :tabp<CR>           " prev-tab
+map <F6> :tabn<CR>           " next-tab
 map <F7> :so ~/.vimrc<CR>    " reload .vimrc
 map <F8> :wa!<CR>            " save file
 
 syntax on                    " enable syntax highlighting
-set number                   " show line numbers
+" line numbering
+set number                 " show line numbers
 set encoding=utf-8           " encoding
+
+" searching
+set hlsearch                 " highlight all search results
+set ignorecase               " search case-insensitive
+
 
 "set list
 "set listchars=tab:>\ ,trail:*,extends:#,nbsp:.
