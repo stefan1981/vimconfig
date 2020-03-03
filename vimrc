@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-ugitive'
+Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -50,14 +50,14 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " Keymappings
-
 nmap <F5> :tabp<CR>
 imap <F5> <C-o>:tabp<CR>
 nmap <F6> :tabn<CR>
 imap <F6> <C-o>:tabn<CR>
 nmap <F7> :so ~/.vimrc<CR>
 nmap <F8> :wa!<CR>
-nmap <C-f> :Ctrlp<CP>
+nmap <C-f> :Ctrlp<CR>
+
 
 syntax on                    " enable syntax highlighting
 
