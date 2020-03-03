@@ -51,14 +51,21 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Keymappings
 
-map <F5> :tabp<CR>           " prev-tab
-map <F6> :tabn<CR>           " next-tab
-map <F7> :so ~/.vimrc<CR>    " reload .vimrc
-map <F8> :wa!<CR>            " save file
+nmap <F5> :tabp<CR>
+imap <F5> <C-o>:tabp<CR>
+nmap <F6> <C-o>:tabn<CR>
+imap <F6> :tabn<CR>
+nmap <F7> :so ~/.vimrc<CR>
+nmap <F8> :wa!<CR>
+nmap <C-f> :Ctrlp<CP>
 
 syntax on                    " enable syntax highlighting
+
 " line numbering
-set number                 " show line numbers
+set number                   " show line numbersa
+set relativenumber
+
+set nofoldenable
 set encoding=utf-8           " encoding
 
 " searching
