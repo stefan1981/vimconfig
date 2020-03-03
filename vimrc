@@ -58,8 +58,6 @@ nmap <F7> :so ~/.vimrc<CR>
 nmap <F8> :wa!<CR>
 nmap <C-f> :Ctrlp<CR>
 
-" test
-
 syntax on                    " enable syntax highlighting
 
 " line numbering
